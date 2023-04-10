@@ -48,7 +48,7 @@ fn main () {
 
     let some_nums = Numbers(32,16);
 
-    // No borrow problems occur. All fine.
+    // No borrowing problems occur. All fine.
     println!("The values of the two fields are: {}, {}", some_nums.0, some_nums.1);
     println!("The values of the two fields are: {}, {}", some_nums.0, some_nums.1);
    
