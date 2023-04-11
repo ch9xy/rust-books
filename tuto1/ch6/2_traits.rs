@@ -1,17 +1,17 @@
 struct Person {
     citizenship: String,
     name: String,
-    age: i32,
+    age: u8,
     gender: char,
     salary: i32
-};
+}
 
 struct Student {
     name_std: String,
     age: u8,
     sex: char,
     country: String
-};
+}
 
 trait GeneralInfo{
     fn info(&self) -> (&str, u8, char);
@@ -35,6 +35,10 @@ impl GeneralInfo for Student {
     }
 
     fn country_info(&self) -> &str {
-        &self.country;
+        &self.country
     }
+}
+
+fn main () {
+
 }
