@@ -1,5 +1,6 @@
+// O(n^2)
 pub fn bubble_sort<T: PartialOrd> (v: &mut [T]) {
-    for p in 0..v.len() {
+    for p in 0..v.len() { // v.len() -1 ?
         let mut sorted = true;
         for i in 0..(v.len() - 1) - p {
         if v[i] > v[i + 1] {
