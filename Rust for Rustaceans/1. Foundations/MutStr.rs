@@ -7,4 +7,5 @@ fn main () {
     *MutStr { s: &mut s}.s = "world";
 
     println!("{}", s);
+    // output: world
 }
